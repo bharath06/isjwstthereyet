@@ -13,13 +13,16 @@
 			text-align: center!important;
 		}
 
-		.header {
-
+		.center {
+		text-align: center!important;	
+		}
+		.link {
+			padding: 20px;
 		}
 	</style>
 	<div class="timer">No, Not Yet.</div><br/>
-	<div class="timer">Time Left: </div><br/>
-	<div class="timer" id="timeLeft"></div>
+	<div class="timer">Time to L2 point: </div><br/>
+	<div class="timer" id="timeLeft">.</div>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 24, 2022 12:20:00").getTime();
@@ -49,6 +52,22 @@ var x = setInterval(function() {
     document.getElementById("timeLeft").innerHTML = "EXPIRED";
   }
 }, 1000);
+</script>
+<br/><br/><br/>
+<div class="center">
+<a class="link" href="https://en.wikipedia.org/wiki/James_Webb_Space_Telescope">What is JWST?</a>
+<a class="link" href="https://www.jwst.nasa.gov/index.html">NASA Page</a>
+<a class="link" href="https://twitter.com/NASAWebb">Twitter Page</a>
+<a class="link" href="https://en.wikipedia.org/wiki/Lagrange_point#Sun%E2%80%93Earth">What is L2?</a> 
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLWGDDPC77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZLWGDDPC77');
 </script>
 </body>
 </html>
